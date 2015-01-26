@@ -1,0 +1,5 @@
+labels:
+  - name: Foobar
+    color: ffffff
+  - name: Bazbooz
+    color: '000000'
