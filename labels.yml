@@ -1,5 +1,31 @@
 labels:
-  - name: Foobar
-    color: ffffff
-  - name: Bazbooz
-    color: '000000'
+  - name: brainstorm
+    color: '5319e7'
+  - name: bug
+    color: 'e11d21'
+  - name: investment_2_high
+    color: '009800'
+  - name: investment_0_low
+    color: 'bfe5bf'
+  - name: investment_1_med
+    color: '9fbe9d'
+  - name: monitoring
+    color: 'ccc'
+  - name: performance
+    color: '8eb892'
+  - name: satisfaction_2_high
+    color: '006b75'
+  - name: satisfaction_0_low
+    color: 'bfdadc'
+  - name: satisfaction_1_med
+    color: 'a2b8ba'
+  - name: ready
+    color: '00adb6'
+  - name: refactor
+    color: '444'
+  - name: security
+    color: '222'
+  - name: todo_current
+    color: 'fbca04'
+  - name: todo_upcoming
+    color: 'fef2c0'
