@@ -7,29 +7,17 @@ require 'yaml'
 
 Dotenv.load
 
-if (token = ENV['GITHUB_TOKEN'])
-  client = Octokit::Client.new(access_token: token)
-else
-  raise 'No access token found. Are you running the script with foreman?'
-end
-
-labels = YAML::load(File.read('labels.yml'))[:labels]
-
-def repo_labels_url(repo)
-  "https://github.com/#{repo}/labels"
-end
-
 class RepoSetup < Thor
-  desc 'add REPO', "Adds labels from labels.yml"
+  desc 'add REPO', "Adds labels from labels.yml. If a label already exists, the color will be updated."
   def add(repo)
     added_count = 0
 
     labels.each do |label|
       begin
-        client.add_label repo, label[:name], label[:color]
+        client.add_label repo, label['name'], label['color']
         added_count += 1
       rescue Octokit::UnprocessableEntity
-        client.update_label repo, label[:name], label[:color]
+        client.update_label repo, label['name'], color: label['color']
       end
     end
 
@@ -38,19 +26,39 @@ class RepoSetup < Thor
 
   desc 'remove REPO', "Removes existing labels that aren't present in labels.yml"
   def remove(repo)
-    existing_labels = client.labels(repo).map { |l| l[:name] }
-    our_label_names = labels.map { |l| l[:name] }
+    existing_labels = client.labels(repo).map { |l| l['name'] }
+    our_label_names = labels.map { |l| l['name'] }
     removed_count = 0
 
     existing_labels.each do |existing|
-      unless existing.downcase.in?(our_label_names.map(&:downcase))
+      unless our_label_names.map(&:downcase).include?(existing.downcase)
         client.delete_label!(repo, existing)
-        puts "Removed label #{existing}"
+        puts "Removed label \"#{existing}\""
         removed_count += 1
       end
     end
 
     puts "Removed #{removed_count} label(s) from repo: #{repo_labels_url(repo)}"
+  end
+
+  private
+
+  def client
+    @client ||= begin
+      if (token = ENV['GITHUB_TOKEN'])
+        client = Octokit::Client.new(access_token: token)
+      else
+        raise 'No access token found. Are you running the script with foreman?'
+      end
+    end
+  end
+
+  def labels
+    @labels ||= YAML::load(File.read('labels.yml'))['labels']
+  end
+
+  def repo_labels_url(repo)
+    "https://github.com/#{repo}/labels"
   end
 end
 
