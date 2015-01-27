@@ -1,37 +1,69 @@
 labels:
   - name: discuss
+    description: "Is this actually a problem? Should we solve it?"
     color: '7d7d7d'
+
   - name: ready
+    description: Ready for a developer to start implementation
     color: '00c94d'
-  - name: brainstorm
-    color: 'ff8400'
+
   - name: bug
+    description: The application is broken.
     color: 'ff3c3c'
+
   - name: hold
+    description: Holding off on this feature indefinitely.
     color: 'ffe3e3'
+
   - name: idea
+    description: A solution in search of a problem. Documented to remember it later.
     color: 'f5f5f5'
+
   - name: invest_high
+    description: High investment (8+ hours)
     color: 'ffb300'
+
   - name: invest_low
+    description: Low investment (0-4 hours)
     color: 'ffe8b2'
+
   - name: invest_medium
+    description: Medium investment (4-8 hours)
     color: 'ffd266'
+
   - name: monitoring
+    description: "This issue should be solved, but it should be monitored for a period before being closed"
     color: '357399'
+
   - name: performance
+    description:
     color: '208116'
+
   - name: refactor
+    description:
     color: '627ada'
+
   - name: sat_basic_expectation
+    description: Customers hate us for not having this.
     color: 'b09a87'
+
   - name: sat_delighter
+    description: Customers will love us for this.
     color: '45ffc7'
+
   - name: sat_standard
+    description: Customer satisfaction is directly proportional to our investment.
     color: '530178'
+
   - name: security
+    description:
     color: '3b4047'
+
   - name: todo_current
+    description: Applies to the assigned user only. Integrates with hubot-github-todos
     color: '6dbbeb'
+
   - name: todo_upcoming
+    description: Applies to the assigned user only. Integrates with hubot-github-todos
     color: 'b6dcf4'
+
