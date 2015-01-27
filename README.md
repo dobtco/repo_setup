@@ -1,6 +1,8 @@
 repo_setup
 ----
 
+This repository handles the provisioning of labels across our GitHub repositories. To read about our labels and their usage, see [labels.yml](https://github.com/dobtco/repo_setup/blob/master/labels.yml).
+
 ## Configuration
 
 `cp .env.example .env` and configure with a personal access token.
