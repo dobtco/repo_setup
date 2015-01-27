@@ -1,31 +1,37 @@
 labels:
-  - name: brainstorm
-    color: '5319e7'
-  - name: bug
-    color: 'e11d21'
-  - name: investment_2_high
-    color: '009800'
-  - name: investment_0_low
-    color: 'bfe5bf'
-  - name: investment_1_med
-    color: '9fbe9d'
-  - name: monitoring
-    color: 'ccc'
-  - name: performance
-    color: '8eb892'
-  - name: satisfaction_2_high
-    color: '006b75'
-  - name: satisfaction_0_low
-    color: 'bfdadc'
-  - name: satisfaction_1_med
-    color: 'a2b8ba'
+  - name: discuss
+    color: '7d7d7d'
   - name: ready
-    color: '00adb6'
+    color: '00c94d'
+  - name: brainstorm
+    color: 'ff8400'
+  - name: bug
+    color: 'ff3c3c'
+  - name: hold
+    color: 'ffe3e3'
+  - name: idea
+    color: 'f5f5f5'
+  - name: invest_high
+    color: 'ffb300'
+  - name: invest_low
+    color: 'ffe8b2'
+  - name: invest_medium
+    color: 'ffd266'
+  - name: monitoring
+    color: '357399'
+  - name: performance
+    color: '208116'
   - name: refactor
-    color: '444'
+    color: '627ada'
+  - name: sat_basic_expectation
+    color: 'b09a87'
+  - name: sat_delighter
+    color: '45ffc7'
+  - name: sat_standard
+    color: '530178'
   - name: security
-    color: '222'
+    color: '3b4047'
   - name: todo_current
-    color: 'fbca04'
+    color: '6dbbeb'
   - name: todo_upcoming
-    color: 'fef2c0'
+    color: 'b6dcf4'
