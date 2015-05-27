@@ -67,3 +67,7 @@ labels:
     description: Applies to the assigned user only. Integrates with hubot-github-todos
     color: 'b6dcf4'
 
+  - name: sponsor_needed
+    description:
+    color: '90d191'
+
