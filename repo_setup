@@ -7,9 +7,13 @@ require 'yaml'
 
 Dotenv.load
 
+Octokit.auto_paginate = true
+
 class RepoSetup < Thor
   desc 'add REPO', "Adds labels from labels.yml. If a label already exists, the color will be updated."
   def add(repo)
+    return add_all(repo) unless repo.include?('/')
+
     added_count = 0
 
     labels.each do |label|
@@ -47,7 +51,43 @@ class RepoSetup < Thor
     remove(repo)
   end
 
+  desc 'remove_specified REPO foo,bar',
+       'removes the list of labels'
+  def remove_specified(repo, label_names)
+    return remove_specified_labels_all(repo, label_names) unless repo.include?('/')
+
+    labels_to_remove = label_names.split(',').map(&:downcase)
+    existing_labels = client.labels(repo).map { |l| l['name'] }
+    removed_count = 0
+
+    existing_labels.each do |existing|
+      if labels_to_remove.include?(existing.downcase)
+        client.delete_label!(repo, existing)
+        puts "Removed label \"#{existing}\""
+        removed_count += 1
+      end
+    end
+
+    puts "Removed #{removed_count} label(s) from repo: #{repo_labels_url(repo)}"
+  end
+
   private
+
+  def add_all(org)
+    all_repos(org).each do |repo_name|
+      add(repo_name)
+    end
+  end
+
+  def remove_specified_labels_all(org, label_names)
+    all_repos(org).each do |repo_name|
+      remove_specified(repo_name, label_names)
+    end
+  end
+
+  def all_repos(org)
+    client.organization_repositories(org).map(&:full_name)
+  end
 
   def client
     @client ||= begin
