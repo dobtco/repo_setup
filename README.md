@@ -20,3 +20,11 @@ This repository handles the provisioning of labels across our GitHub repositorie
 ### 2-in-1 (add & remove)
 
 `./repo_setup setup org/repo`
+
+### To add labels to every repo in an organization
+
+`./repo_setup add dobtco`
+
+### To remove specified labels
+
+`./repo_setup remove_specified org/repo invest_hi,invest_low,invest_med`

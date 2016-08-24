@@ -19,18 +19,6 @@ labels:
     description: A solution in search of a problem. Documented to remember it later.
     color: 'f5f5f5'
 
-  - name: invest_high
-    description: High investment (8+ hours)
-    color: 'ffb300'
-
-  - name: invest_low
-    description: Low investment (0-4 hours)
-    color: 'ffe8b2'
-
-  - name: invest_medium
-    description: Medium investment (4-8 hours)
-    color: 'ffd266'
-
   - name: monitoring
     description: "This issue should be solved, but it should be monitored for a period before being closed"
     color: '357399'
@@ -71,3 +59,26 @@ labels:
     description:
     color: '90d191'
 
+  - name: est_1
+    color: '9FA4C6'
+
+  - name: est_2
+    color: '9398BA'
+
+  - name: est_3
+    color: '868BAD'
+
+  - name: est_4
+    color: '797EA0'
+
+  - name: est_5
+    color: '6C7193'
+
+  - name: est_6
+    color: '606587'
+
+  - name: est_7
+    color: '53587A'
+
+  - name: est_8
+    color: '464B6D'
