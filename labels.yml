@@ -1,8 +1,4 @@
 labels:
-  - name: brainstorm
-    description: "Is this actually a problem? Should we solve it?"
-    color: '7d7d7d'
-
   - name: ready
     description: Ready for a developer to start implementation
     color: '00c94d'
