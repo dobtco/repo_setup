@@ -1,8 +1,4 @@
 labels:
-  - name: brainstorm
-    description: "Is this actually a problem? Should we solve it?"
-    color: '7d7d7d'
-
   - name: ready
     description: Ready for a developer to start implementation
     color: '00c94d'
@@ -30,18 +26,6 @@ labels:
   - name: refactor
     description:
     color: '627ada'
-
-  - name: sat_basic_expectation
-    description: Customers hate us for not having this.
-    color: 'b09a87'
-
-  - name: sat_delighter
-    description: Customers will love us for this.
-    color: '45ffc7'
-
-  - name: sat_standard
-    description: Customer satisfaction is directly proportional to our investment.
-    color: '530178'
 
   - name: security
     description:
@@ -82,3 +66,23 @@ labels:
 
   - name: est_8
     color: '464B6D'
+
+  - name: p_outcome
+    description: Is this an actual user need? Or: we're not yet sure what the need is.
+    color: 'FE95F4'
+
+  - name: p_structure
+    description: We agree that the outcome makes sense and are deciding how to fulfill it.
+    color: 'D46DD8'
+
+  - name: p_interaction
+    description: We know how we want to solve the problem and are discussing wireframes or rough mockups.
+    color: '9341AF'
+
+  - name: p_visual
+    description: We agree on the interaction and are debating visual treatments: colors, spacing, etc.
+    color: '6322AF'
+
+  - name: blocked
+    description: We can't work on this task until another task is complete.
+    color: '555555'
