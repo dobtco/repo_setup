@@ -83,6 +83,6 @@ labels:
     description: We agree on the interaction and are debating visual treatments: colors, spacing, etc.
     color: '6322AF'
 
-  - name: dependent
+  - name: blocked
     description: We can't work on this task until another task is complete.
     color: '555555'
