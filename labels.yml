@@ -68,7 +68,7 @@ labels:
     color: '464B6D'
 
   - name: p_outcome
-    description: Is this an actual user need? Or: we're not yet sure what the need is.
+    description: "Is this an actual user need? Or: we're not yet sure what the need is."
     color: 'FE95F4'
 
   - name: p_structure
@@ -80,7 +80,7 @@ labels:
     color: '9341AF'
 
   - name: p_visual
-    description: We agree on the interaction and are debating visual treatments: colors, spacing, etc.
+    description: "We agree on the interaction and are debating visual treatments: colors, spacing, etc."
     color: '6322AF'
 
   - name: blocked
