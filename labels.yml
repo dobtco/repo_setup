@@ -86,3 +86,7 @@ labels:
   - name: blocked
     description: We can't work on this task until another task is complete.
     color: '555555'
+
+  - name: partial_solution
+    description: This is an easier workaround to accomplish part of the outcome for a large, difficult task.
+    color: 'FFEDB3'
