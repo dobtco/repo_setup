@@ -45,7 +45,7 @@ labels:
 
   - name: dev_research
     description: "We know the outcome. How might we solve it?"
-    color: '40bdbd'
+    color: '9083bd'
 
   - name: client_services
     description: Any product work that likely won't be reused for multiple customers.
