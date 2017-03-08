@@ -20,16 +20,32 @@ labels:
     color: '357399'
 
   - name: performance
-    description:
+    description: "This issue significantly affects current performance, or will when we scale."
     color: '208116'
 
+  - name: operations
+    description: Anything related to our internal IT systems.
+    color: '000000'
+
+  - name: infrastructure
+    description: Product-related tooling.
+
+  - name: debt
+    description: "When we originally built this feature, we knew we'd need to improve it later."
+
   - name: refactor
-    description:
+    description: "New customer requirements, software updates, or changing business needs are motivating us to improve this."
     color: '627ada'
 
   - name: security
-    description:
+    description: A significant customer-facing security issue.
     color: '3b4047'
+
+  - name: dev_research
+    description: "We know the outcome. How might we solve it?"
+
+  - name: client_services
+    description: Any product work that likely won't be reused for multiple customers.
 
   - name: todo_current
     description: Applies to the assigned user only. Integrates with hubot-github-todos
