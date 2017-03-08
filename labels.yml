@@ -16,7 +16,7 @@ labels:
     color: 'f5f5f5'
 
   - name: monitoring
-    description: "This issue should be solved, but it should be monitored for a period before being closed"
+    description: "This issue should be solved, but let's keep an eye on it for a while before we close it."
     color: '357399'
 
   - name: performance
