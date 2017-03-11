@@ -24,7 +24,7 @@ labels:
     color: '208116'
 
   - name: operations
-    description: Internal tooling and IT.
+    description: Infrastructure, internal tooling and IT.
     color: '262626'
 
   - name: debt
@@ -32,7 +32,7 @@ labels:
     color: 'b51e1e'
 
   - name: refactor
-    description: "Changing the code without changing its behavior, usually to ease maintenance or enable future features."
+    description: "Changing the code without changing its behavior, usually to ease maintenance or enable future feature development."
     color: '627ada'
 
   - name: security
