@@ -24,23 +24,19 @@ labels:
     color: '208116'
 
   - name: operations
-    description: Anything related to our internal IT systems.
+    description: Internal tooling and IT.
     color: '262626'
-
-  - name: infrastructure
-    description: Product-related tooling.
-    color: '56a39f'
 
   - name: debt
     description: "When we originally built this feature, we knew we'd need to improve it later."
     color: 'b51e1e'
 
   - name: refactor
-    description: "New customer requirements, software updates, or changing business needs are motivating us to improve this."
+    description: "Changing the code without changing its behavior, usually to ease maintenance or enable future features."
     color: '627ada'
 
   - name: security
-    description: A significant customer-facing security issue.
+    description: Security issues and vulnerabilities.
     color: '191a47'
 
   - name: dev_research
