@@ -16,20 +16,36 @@ labels:
     color: 'f5f5f5'
 
   - name: monitoring
-    description: "This issue should be solved, but it should be monitored for a period before being closed"
+    description: "This issue should be solved, but let's keep an eye on it for a while before we close it."
     color: '357399'
 
   - name: performance
-    description:
+    description: "This issue significantly affects current performance, or will when we scale."
     color: '208116'
 
+  - name: operations
+    description: Infrastructure, internal tooling and IT.
+    color: '262626'
+
+  - name: debt
+    description: "When we originally built this feature, we knew we'd need to improve it later."
+    color: 'b51e1e'
+
   - name: refactor
-    description:
+    description: "Changing the code without changing its behavior, usually to ease maintenance or enable future feature development."
     color: '627ada'
 
   - name: security
-    description:
-    color: '3b4047'
+    description: Security issues and vulnerabilities.
+    color: '191a47'
+
+  - name: dev_research
+    description: "We know the outcome. How might we solve it?"
+    color: '9083bd'
+
+  - name: client_services
+    description: Any product work that likely won't be reused for multiple customers.
+    color: 'ffb280'
 
   - name: todo_current
     description: Applies to the assigned user only. Integrates with hubot-github-todos
