@@ -6,6 +6,22 @@ labels:
   - name: bug
     description: The application is broken.
     color: 'ff3c3c'
+    
+  - name: bug_critical
+    description: A bug that causes the system to break, can cause serious data loss, or introduces a major security issue.
+    color: 'ff8c8c'
+  
+  - name: bug_major
+    description: A bug that makes the system mostly / completely unusable, causes data loss, or introduces a minor security issue.
+    color: 'ffa2a2'
+
+  - name: bug_normal
+    description: A bug that has a significant impact on usability, but a workaround exists.
+    color: 'ffb7b7'
+  
+  - name: bug_minor
+    description: "A bug that doesn't impact usability. Examples include visual issues and typos."
+    color: 'ffcdcd'
 
   - name: hold
     description: Holding off on this feature indefinitely.
